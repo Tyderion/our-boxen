@@ -66,6 +66,7 @@ github "nvm",        "1.0.0"
 github "osx",        "2.8.0"
 github "android",        "1.4.0"
 github "karabiner",        "1.0.1"
+github "xtrafinder",        "1.0.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

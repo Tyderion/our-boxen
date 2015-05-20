@@ -62,6 +62,7 @@ node default {
   include osxfuse
   include ntfs_3g
   include nvm
+  include xtrafinder
 
   # OS X Settings
   include osx::dock::autohide
