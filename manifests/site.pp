@@ -72,6 +72,13 @@ node default {
   include osx::finder::enable_quicklook_text_selection
   include osx::finder::show_all_filename_extensions
   include osx::safari::enable_developer_mode
+
+  # Android
+  include android::sdk
+  include android::tools
+  include android::platform_tools
+  include android::doc
+  android::build_tools { '22.0.1': }
   include sublime_text
   sublime_text::package { 'Emmet':
     source => 'sergeche/emmet-sublime'

@@ -64,6 +64,7 @@ github "osxfuse",        "1.4.0"
 github "ntfs_3g",        "1.0.0"
 github "nvm",        "1.0.0"
 github "osx",        "2.8.0"
+github "android",        "1.4.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
