@@ -63,6 +63,15 @@ node default {
   include ntfs_3g
   include nvm
 
+  # OS X Settings
+  include osx::dock::autohide
+  include osx::dock::disable
+  include osx::dock::disable_dashboard
+  include osx::finder::unhide_library
+  include osx::finder::show_hidden_files
+  include osx::finder::enable_quicklook_text_selection
+  include osx::finder::show_all_filename_extensions
+  include osx::safari::enable_developer_mode
   include sublime_text
   sublime_text::package { 'Emmet':
     source => 'sergeche/emmet-sublime'
