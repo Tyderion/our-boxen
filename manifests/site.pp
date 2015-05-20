@@ -79,6 +79,12 @@ node default {
   include android::platform_tools
   include android::doc
   android::build_tools { '22.0.1': }
+  # Hyper Key
+  include karabiner
+  # set the contents of the private.xml file.
+karabiner::private_xml{ 'private.xml':
+  content => '<?xml version="1.0"?><root><item><name>F19 to F19</name><appendix>(F19 to Hyper (ctrl+shift+cmd+opt) + F19 Only, send escape)</appendix><identifier>private.f192f19_escape</identifier><autogen>--KeyOverlaidModifier--KeyCode::F19,KeyCode::COMMAND_L,ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,KeyCode::ESCAPE</autogen></item></root>'
+}
   include sublime_text
   sublime_text::package { 'Emmet':
     source => 'sergeche/emmet-sublime'
