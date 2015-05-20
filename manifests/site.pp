@@ -58,6 +58,32 @@ node default {
   include hub
   include nginx
 
+  include sublime_text
+  sublime_text::package { 'Emmet':
+    source => 'sergeche/emmet-sublime'
+  }
+  sublime_text::package { 'Package Control':
+    source => 'wbond/sublime_package_control'
+  }
+  sublime_text::package { 'Bracket Highlighter':
+    source => 'facelessuser/BracketHighlighter'
+  }
+  sublime_text::package { 'Sidebar Enhancements':
+    source => 'titoBouzout/SideBarEnhancements'
+  }
+  sublime_text::package { 'Alignment':
+    source => 'wbond/sublime_alignment'
+  }
+  sublime_text::package { 'Color Picker':
+    source => 'jnordberg/sublime-colorpick'
+  }
+  sublime_text::package { 'Markdown Editing':
+    source => 'SublimeText-Markdown/MarkdownEditing'
+  }
+  sublime_text::package { 'Solarized Theme':
+    source => 'electricgraffitti/soda-solarized-dark-theme'
+  }
+
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
@@ -67,6 +93,7 @@ node default {
   nodejs::version { 'v0.6': }
   nodejs::version { 'v0.8': }
   nodejs::version { 'v0.10': }
+  nodejs::version { 'v0.12.3': }
 
   # default ruby versions
   ruby::version { '1.9.3': }
