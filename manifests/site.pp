@@ -63,6 +63,8 @@ node default {
   include ntfs_3g
   include nvm
   include xtrafinder
+  include induction
+
 
   # OS X Settings
   include osx::dock::autohide
@@ -80,6 +82,7 @@ node default {
   include android::platform_tools
   include android::doc
   android::build_tools { '22.0.1': }
+
   # Hyper Key
   include karabiner
   # set the contents of the private.xml file.
