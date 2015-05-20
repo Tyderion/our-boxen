@@ -60,6 +60,7 @@ node default {
   include java
   include osxfuse
   include ntfs_3g
+  include nvm
 
   include sublime_text
   sublime_text::package { 'Emmet':
@@ -92,11 +93,11 @@ node default {
     fail('Please enable full disk encryption and try again')
   }
 
-  # node versions
-  nodejs::version { 'v0.6': }
-  nodejs::version { 'v0.8': }
-  nodejs::version { 'v0.10': }
-  nodejs::version { 'v0.12.3': }
+  # # node versions
+  # nodejs::version { 'v0.6': }
+  # nodejs::version { 'v0.8': }
+  # nodejs::version { 'v0.10': }
+  # nodejs::version { 'v0.12.3': }
 
   # default ruby versions
   ruby::version { '1.9.3': }
