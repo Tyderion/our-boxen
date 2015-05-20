@@ -57,6 +57,8 @@ node default {
   include git
   include hub
   include nginx
+  include osxfuse
+  include ntfs_3g
 
   include sublime_text
   sublime_text::package { 'Emmet':
