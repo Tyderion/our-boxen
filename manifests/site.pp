@@ -57,6 +57,7 @@ node default {
   include git
   include hub
   include nginx
+  include java
   include osxfuse
   include ntfs_3g
 
