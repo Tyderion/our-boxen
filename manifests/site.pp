@@ -86,6 +86,26 @@ node default {
 karabiner::private_xml{ 'private.xml':
   content => '<?xml version="1.0"?><root><item><name>F19 to F19</name><appendix>(F19 to Hyper (ctrl+shift+cmd+opt) + F19 Only, send escape)</appendix><identifier>private.f192f19_escape</identifier><autogen>--KeyOverlaidModifier--KeyCode::F19,KeyCode::COMMAND_L,ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,KeyCode::ESCAPE</autogen></item></root>'
 }
+
+
+  # Brew Casks
+  include brewcask
+  package { 'google-chrome': provider => 'brewcask' }
+  package { 'firefox': provider => 'brewcask' }
+  package { 'mamp': provider => 'brewcask' }
+  package { 'bettertouchtool': provider => 'brewcask' }
+  package { 'totalterminal': provider => 'brewcask' }
+  package { 'whatpulse': provider => 'brewcask' }
+  package { 'dropbox': provider => 'brewcask' }
+  package { 'intellij-idea': provider => 'brewcask' }
+  package { 'sourcetree': provider => 'brewcask' }
+  package { 'steam': provider => 'brewcask' }
+  package { 'skype': provider => 'brewcask' }
+  package { 'evernote': provider => 'brewcask' }
+  package { 'functionflip': provider => 'brewcask' }
+  package { 'android-studio': provider => 'brewcask' }
+
+  # Sublime Text 3
   include sublime_text
   sublime_text::package { 'Emmet':
     source => 'sergeche/emmet-sublime'
