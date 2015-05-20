@@ -58,6 +58,7 @@ node default {
   include hub
   include nginx
   include java
+  include virtualbox
   include osxfuse
   include ntfs_3g
   include nvm
